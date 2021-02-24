@@ -8,6 +8,8 @@ import { SharedModule } from '../../shared/shared.module';
 import { MaterialDesign } from '../../material/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DashboardService } from 'src/app/modules/dashboard.service';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -20,6 +22,8 @@ import { DashboardService } from 'src/app/modules/dashboard.service';
     SharedModule,
     MaterialDesign,
     FlexLayoutModule,
+    MatPaginatorModule,
+    MatTableModule
   ],
   providers: [
     DashboardService

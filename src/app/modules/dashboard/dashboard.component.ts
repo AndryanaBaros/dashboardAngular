@@ -9,8 +9,8 @@ import { DashboardService } from '../dashboard.service';
 export class DashboardComponent implements OnInit {
 
   bigChart: any[] = [];
-  cards: any[]= [];
-  pie: any[]= [];
+  cards:  any[]= [];
+  pie:  any[]= [];
 
   constructor( private dashboardServices: DashboardService) { }
 
@@ -18,6 +18,7 @@ export class DashboardComponent implements OnInit {
     this.bigChart = this.dashboardServices.bigChart();
     this.cards = this.dashboardServices.cards();
     this.pie = this.dashboardServices.pie();
+
   }
 
 }

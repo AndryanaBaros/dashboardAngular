@@ -11,9 +11,6 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
 import { TableComponent } from './widgets/table/table.component';
-
-
-
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -40,7 +37,7 @@ import { TableComponent } from './widgets/table/table.component';
     AreaComponent,
     CardComponent,
     PieComponent,
-
+    TableComponent,
   ]
 })
 export class SharedModule { }
