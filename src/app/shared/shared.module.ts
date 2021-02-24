@@ -6,6 +6,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MaterialDesign } from '../material/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
+import { AreaComponent } from './widgets/area/area.component';
+import { HighchartsChartModule } from 'highcharts-angular';
+import { CardComponent } from './widgets/card/card.component';
+import { PieComponent } from './widgets/pie/pie.component';
+import { TableComponent } from './widgets/table/table.component';
 
 
 
@@ -14,6 +19,10 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
+    AreaComponent,
+    CardComponent,
+    PieComponent,
+    TableComponent,
   ],
 
   imports: [
@@ -21,12 +30,17 @@ import { RouterModule } from '@angular/router';
     MaterialDesign,
     FlexLayoutModule,
     RouterModule,
+    HighchartsChartModule,
   ],
   
   exports : [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    AreaComponent,
+    CardComponent,
+    PieComponent,
+
   ]
 })
 export class SharedModule { }

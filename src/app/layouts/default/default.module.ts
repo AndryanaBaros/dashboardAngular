@@ -6,9 +6,8 @@ import { RouterModule } from '@angular/router';
 import { PostComponent } from '../../modules/post/post.component';
 import { SharedModule } from '../../shared/shared.module';
 import { MaterialDesign } from '../../material/material';
-
-
-
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { DashboardService } from 'src/app/modules/dashboard.service';
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -20,7 +19,10 @@ import { MaterialDesign } from '../../material/material';
     RouterModule,
     SharedModule,
     MaterialDesign,
-
+    FlexLayoutModule,
+  ],
+  providers: [
+    DashboardService
   ]
 })
 export class DefaultModule { }
